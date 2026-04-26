@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoshiku | Portfolio</title>
+    <meta name="description" content="Portfolio of Hoshiku, a developer focused on AI, real-time voice systems, software engineering, and personal technical projects.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Hoshiku</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#current">Current Work</a></li>
+                <li><a href="#certs">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Open menu">☰</button>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">Weibo Qiu</h1>
+                <p class="hero-subtitle">Software Developer focused on AI, real-time voice systems, and full-stack development.</p>
+                <p class="hero-location">Based in Spain and China</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Introduction</h3>
+                    <p>I am a developer with a strong personal background in building software projects, experimenting with AI systems, and learning by creating real tools from scratch.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Education</h3>
+                    <p>I am currently studying DAM (Multiplatform Application Development) in Catalonia, and I am interested in continuing into engineering to deepen my knowledge of systems and software architecture.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Specialization</h3>
+                    <p>My main focus is real-time generative AI integration, including multimodal LLMs, text-to-speech, speech-to-text, voice conversion with RVC, and vision features powered by Qwen models.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Tech Stack</h3>
+                    <p>Python, FastAPI, WebSockets, Flutter, Java, C#, .NET, CUDA, llama.cpp, Transformers, MariaDB, SQLite, Linux server administration, and networking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card featured">
+                    <div class="project-header">
+                        <h3>HadaAI</h3>
+                        <span class="badge badge-ai">AI / Companion</span>
+                    </div>
+                    <p class="project-desc">A real-time multimodal AI assistant built around Qwen models, camera-based vision, speech recognition, text-to-speech, persistent memory, and a distinct personality-driven experience.</p>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>RealtimeSTT</li>
+                        <li>RealtimeTTS</li>
+                        <li>Qwen 3.5</li>
+                        <li>RVC</li>
+                        <li>FastAPI</li>
+                        <li>llama.cpp</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/Hoshikuu" target="_blank" rel="noopener" class="link-github">GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Desktop Messaging App</h3>
+                        <span class="badge badge-work">Software</span>
+                    </div>
+                    <p class="project-desc">A desktop instant messaging application developed in Python. It includes a simplified encryption concept as part of the learning process behind secure communication systems.</p>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>Desktop UI</li>
+                        <li>Networking</li>
+                        <li>Encryption Basics</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Personal NAS with OMV</h3>
+                        <span class="badge badge-infra">Infrastructure</span>
+                    </div>
+                    <p class="project-desc">A personal NAS setup built with OpenMediaVault on a Raspberry Pi 5, using Docker for self-hosted services, storage management, and home infrastructure experimentation.</p>
+                    <ul class="project-tech">
+                        <li>Raspberry Pi 5</li>
+                        <li>OpenMediaVault</li>
+                        <li>Docker</li>
+                        <li>Linux</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Flutter Learning Projects</h3>
+                        <span class="badge badge-mobile">Mobile / Web</span>
+                    </div>
+                    <p class="project-desc">A collection of small projects created to learn Flutter and Dart for both web browsers and mobile devices, with a focus on UI structure and application flow.</p>
+                    <ul class="project-tech">
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                        <li>Mobile UI</li>
+                        <li>Web Apps</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="current" class="section current">
+        <div class="container">
+            <h2 class="section-title">Current Work</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Local Inference Optimization for HadaAI</h3>
+                        <span class="timeline-date">2026</span>
+                        <p>Optimizing llama.cpp with Qwen3.5-35B-A3B in Q2_K_XL quantization for local inference, using a large context window and tuning performance for limited hardware.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>RVC Streaming Integration</h3>
+                        <span class="timeline-date">2026</span>
+                        <p>Transforming the RVC WebUI workflow into a FastAPI WebSocket endpoint for real-time audio streaming and voice conversion.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Daily Memory System for HadaAI</h3>
+                        <span class="timeline-date">2026</span>
+                        <p>Designing a simple memory system based on daily context to make interactions feel more persistent, structured, and personal over time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certs" class="section certs">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>DAM</h3>
+                    <p class="cert-entity">Institut Vidal i Barraquer</p>
+                    <p class="cert-year">2025 - Ongoing</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📘</div>
+                    <h3>Honours Degree of SMR</h3>
+                    <p class="cert-entity">Institut Vidal i Barraquer</p>
+                    <p class="cert-year">2025</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🏫</div>
+                    <h3>SMR</h3>
+                    <p class="cert-entity">Institut Vidal i Barraquer</p>
+                    <p class="cert-year">2023 - 2025</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">💻</div>
+                    <h3>Python Course</h3>
+                    <p class="cert-entity">Tokio School</p>
+                    <p class="cert-year">2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-intro">You can find me on the platforms below.</p>
+            <div class="social-grid">
+                <a href="https://github.com/Hoshikuu" target="_blank" rel="noopener" class="social-card github">
+                    <div class="social-icon">💻</div>
+                    <h4>GitHub</h4>
+                    <p>Hoshikuu</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/weibo-qiu" target="_blank" rel="noopener" class="social-card linkedin">
+                    <div class="social-icon">💼</div>
+                    <h4>LinkedIn</h4>
+                    <p>weibo-qiu</p>
+                </a>
+
+                <a href="https://discord.com/users/853193606529024041" target="_blank" rel="noopener" class="social-card discord">
+                    <div class="social-icon">💬</div>
+                    <h4>Discord</h4>
+                    <p>hoshiku_</p>
+                </a>
+
+                <a href="https://www.instagram.com/hoshiku__/" target="_blank" rel="noopener" class="social-card instagram">
+                    <div class="social-icon">📷</div>
+                    <h4>Instagram</h4>
+                    <p>hoshiku__</p>
+                </a>
+
+                <a href="https://x.com/Hoshiku__" target="_blank" rel="noopener" class="social-card twitter">
+                    <div class="social-icon">🐦</div>
+                    <h4>X / Twitter</h4>
+                    <p>Hoshiku__</p>
+                </a>
+
+                <a href="mailto:weiboq22@gmail.com" class="social-card email">
+                    <div class="social-icon">✉️</div>
+                    <h4>Email</h4>
+                    <p>weiboq22@gmail.com</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Built with 💜 by Hoshiku · <a href="https://www.hoshiku.net" target="_blank" rel="noopener">www.hoshiku.net</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
