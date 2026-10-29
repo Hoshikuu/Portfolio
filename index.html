@@ -1,253 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoshiku | Portfolio</title>
-    <meta name="description" content="Portfolio of Hoshiku, a developer focused on AI, real-time voice systems, software engineering, and personal technical projects.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Hoshiku's portfolio: local AI, computer vision and a home lab.">
+  <meta name="theme-color" content="#0b0c17">
+  <title>Hoshiku — Projects, systems and ideas</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="#home" class="logo">Hoshiku</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#current">Current Work</a></li>
-                <li><a href="#certs">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="menu-toggle" aria-label="Open menu">☰</button>
+  <header class="top wrap"><a class="brand" href="#top">hoshiku<span>.</span></a>
+    <nav class="nav" aria-label="Main navigation" data-en-aria="Main navigation" data-es-aria="Navegación principal"><a
+        href="#work" data-en="Projects" data-es="Proyectos">Projects</a><a class="nav-about" href="#about"
+        data-en="About" data-es="Sobre mí">About</a><a href="https://github.com/Hoshikuu">GitHub ↗</a><button
+        class="lang" id="language" type="button" aria-label="Cambiar idioma a español">Español</button></nav>
+  </header>
+  <main>
+    <section class="hero wrap" id="top">
+      <div>
+        <div class="eyebrow" data-en="Hello, I'm Hoshiku" data-es="Hola, soy Hoshiku">Hello, I'm Hoshiku</div>
+        <h1><span data-en="Curiosity," data-es="Curiosidad,">Curiosity,</span><br><em data-en="built into"
+            data-es="convertida en">built into</em><br><span data-en="something." data-es="algo real.">something.</span>
+        </h1>
+        <p data-en="I'm Hoshiku. I build software, experiment with local AI and computer vision, and run my own home lab."
+          data-es="Soy Hoshiku. Desarrollo software, experimento con IA local y visión artificial, y mantengo mi propio laboratorio en casa.">
+          I'm Hoshiku. I build software, experiment with local AI and computer vision, and run my own home lab.</p>
+        <div class="buttons"><a class="button primary" href="#work"><span data-en="Explore my work"
+              data-es="Explorar mis proyectos">Explore my work</span> ↘</a><a class="button outline"
+            href="https://github.com/Hoshikuu">GitHub ↗</a></div>
+      </div>
+      <div class="scene" aria-hidden="true"><span class="spark s1">✳</span><span class="spark s2">✦</span><span
+          class="spark s3">✧</span><span class="spark s4">✦</span>
+        <div class="window">
+          <div class="winbar"><i></i><i></i><i></i><span>hoshiku / workspace</span></div>
+          <div class="terminal">
+            <div><strong>~/</strong> <span class="white">explore</span> --ideas</div>
+            <div>&nbsp;</div>
+            <div><strong>✦</strong> <span data-en="local intelligence" data-es="inteligencia local">local
+                intelligence</span></div>
+            <div><strong>✦</strong> <span data-en="vision &amp; interaction" data-es="visión e interacción">vision &amp;
+                interaction</span></div>
+            <div><strong>✦</strong> <span data-en="self-hosted systems" data-es="sistemas autoalojados">self-hosted
+                systems</span></div>
+            <div>&nbsp;</div>
+            <div><strong>→</strong> <span data-en="always building" data-es="siempre creando">always building</span> <b
+                class="cursor"></b></div>
+          </div>
         </div>
-    </nav>
-
-    <header id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-title">Weibo Qiu</h1>
-                <p class="hero-subtitle">Software Developer focused on AI, real-time voice systems, and full-stack development.</p>
-                <p class="hero-location">Based in Spain and China</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-            </div>
-        </div>
-        <div class="hero-particles" id="particles"></div>
-    </header>
-
-    <section id="about" class="section about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <h3>Introduction</h3>
-                    <p>I am a developer with a strong personal background in building software projects, experimenting with AI systems, and learning by creating real tools from scratch.</p>
-                </div>
-                <div class="about-card">
-                    <h3>Education</h3>
-                    <p>I am currently studying DAM (Multiplatform Application Development) in Catalonia, and I am interested in continuing into engineering to deepen my knowledge of systems and software architecture.</p>
-                </div>
-                <div class="about-card">
-                    <h3>Specialization</h3>
-                    <p>My main focus is real-time generative AI integration, including multimodal LLMs, text-to-speech, speech-to-text, voice conversion with RVC, and vision features powered by Qwen models.</p>
-                </div>
-                <div class="about-card">
-                    <h3>Tech Stack</h3>
-                    <p>Python, FastAPI, WebSockets, Flutter, Java, C#, .NET, CUDA, llama.cpp, Transformers, MariaDB, SQLite, Linux server administration, and networking.</p>
-                </div>
-            </div>
-        </div>
+        <div class="scene-note" data-en="A LITTLE CORNER OF THE INTERNET / ✧"
+          data-es="UN PEQUEÑO RINCÓN DE INTERNET / ✧">A LITTLE CORNER OF THE INTERNET / ✧</div>
+      </div>
     </section>
-
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2 class="section-title">Selected Projects</h2>
-            <div class="projects-grid">
-                <article class="project-card featured">
-                    <div class="project-header">
-                        <h3>HadaAI</h3>
-                        <span class="badge badge-ai">AI / Companion</span>
-                    </div>
-                    <p class="project-desc">A real-time multimodal AI assistant built around Qwen models, camera-based vision, speech recognition, text-to-speech, persistent memory, and a distinct personality-driven experience.</p>
-                    <ul class="project-tech">
-                        <li>Python</li>
-                        <li>RealtimeSTT</li>
-                        <li>RealtimeTTS</li>
-                        <li>Qwen 3.5</li>
-                        <li>RVC</li>
-                        <li>FastAPI</li>
-                        <li>llama.cpp</li>
-                    </ul>
-                    <div class="project-links">
-                        <a href="https://github.com/Hoshikuu" target="_blank" rel="noopener" class="link-github">GitHub →</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Desktop Messaging App</h3>
-                        <span class="badge badge-work">Software</span>
-                    </div>
-                    <p class="project-desc">A desktop instant messaging application developed in Python. It includes a simplified encryption concept as part of the learning process behind secure communication systems.</p>
-                    <ul class="project-tech">
-                        <li>Python</li>
-                        <li>Desktop UI</li>
-                        <li>Networking</li>
-                        <li>Encryption Basics</li>
-                    </ul>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Personal NAS with OMV</h3>
-                        <span class="badge badge-infra">Infrastructure</span>
-                    </div>
-                    <p class="project-desc">A personal NAS setup built with OpenMediaVault on a Raspberry Pi 5, using Docker for self-hosted services, storage management, and home infrastructure experimentation.</p>
-                    <ul class="project-tech">
-                        <li>Raspberry Pi 5</li>
-                        <li>OpenMediaVault</li>
-                        <li>Docker</li>
-                        <li>Linux</li>
-                    </ul>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Flutter Learning Projects</h3>
-                        <span class="badge badge-mobile">Mobile / Web</span>
-                    </div>
-                    <p class="project-desc">A collection of small projects created to learn Flutter and Dart for both web browsers and mobile devices, with a focus on UI structure and application flow.</p>
-                    <ul class="project-tech">
-                        <li>Flutter</li>
-                        <li>Dart</li>
-                        <li>Mobile UI</li>
-                        <li>Web Apps</li>
-                    </ul>
-                </article>
-            </div>
+    <div class="band">
+      <div class="wrap band-inner"><span><strong>01 /</strong> <span data-en="LOCAL AI" data-es="IA LOCAL">LOCAL
+            AI</span></span><span><strong>02 /</strong> <span data-en="COMPUTER VISION"
+            data-es="VISIÓN ARTIFICIAL">COMPUTER VISION</span></span><span><strong>03 /</strong> <span
+            data-en="HOME LAB" data-es="LABORATORIO EN CASA">HOME LAB</span></span><span><strong>04 /</strong> <span
+            data-en="EXPERIMENTS" data-es="EXPERIMENTOS">EXPERIMENTS</span></span></div>
+    </div>
+    <section class="section wrap" id="work">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow" data-en="Selected work" data-es="Proyectos seleccionados">Selected work</div>
+          <h2 data-en="Things I'm building." data-es="Cosas que estoy creando.">Things I'm building.</h2>
         </div>
+        <p data-en="A selection of projects I have built, tested and kept working on."
+          data-es="Una selección de proyectos que he creado, probado y seguido desarrollando.">A selection of projects I
+          have built, tested and kept working on.</p>
+      </div>
+      <article class="project">
+        <div class="project-number">01 /</div>
+        <div>
+          <div class="project-type" data-en="Main project · Local AI" data-es="Proyecto principal · IA local">Main
+            project · Local AI</div>
+          <h3>Fairy</h3>
+        </div>
+        <div class="project-copy">
+          <p data-en="My main project is a local AI assistant that brings language models, speech transcription and voice services together with Discord. Fairy is a work in progress, built to run on my own hardware."
+            data-es="Mi proyecto principal es un asistente de IA local que une modelos de lenguaje, transcripción y servicios de voz con Discord. Fairy sigue en desarrollo y está pensado para funcionar en mi propio equipo.">
+            My main project is a local AI assistant that brings language models, speech transcription and voice services
+            together with Discord. Fairy is a work in progress, built to run on my own hardware.</p>
+          <div class="tags">
+            <span>Python</span><span>llama.cpp</span><span>Whisper</span><span>Kokoro</span><span>Discord</span></div><a
+            class="project-link" href="https://github.com/Hoshikuu/Fairy" data-en="Explore Fairy on GitHub ↗"
+            data-es="Ver Fairy en GitHub ↗">Explore Fairy on GitHub ↗</a>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-number">02 /</div>
+        <div>
+          <div class="project-type" data-en="Computer vision · Experimental" data-es="Visión artificial · Experimental">
+            Computer vision · Experimental</div>
+          <h3>Cam2VR</h3>
+        </div>
+        <div class="project-copy">
+          <p data-en="An experiment in body tracking with a webcam. Cam2VR combines C++, Python and MediaPipe to detect body landmarks in a calibratable 3D space. Sending trackers to VR is still a future step."
+            data-es="Un experimento de seguimiento corporal con una webcam. Cam2VR combina C++, Python y MediaPipe para detectar puntos del cuerpo en un espacio 3D calibrable. El envío de trackers a VR todavía es un paso futuro.">
+            An experiment in body tracking with a webcam. Cam2VR combines C++, Python and MediaPipe to detect body
+            landmarks in a calibratable 3D space. Sending trackers to VR is still a future step.</p>
+          <div class="tags"><span>C++</span><span>Python</span><span>MediaPipe</span><span>3D</span></div><a
+            class="project-link" href="https://github.com/Hoshikuu/Cam2VR" data-en="Explore Cam2VR on GitHub ↗"
+            data-es="Ver Cam2VR en GitHub ↗">Explore Cam2VR on GitHub ↗</a>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-number">03 /</div>
+        <div>
+          <div class="project-type" data-en="Game development · In progress"
+            data-es="Desarrollo de juegos · En desarrollo">Game development · In progress</div>
+          <h3>Bouncy Bally</h3>
+        </div>
+        <div class="project-copy">
+          <p data-en="A Unity game in progress inspired by a Galton board, with progression and a skill tree. An opportunity to experiment with game systems and balance."
+            data-es="Un juego en desarrollo con Unity inspirado en un tablero de Galton, con progresión y árbol de habilidades. Una oportunidad para experimentar con sistemas de juego y equilibrio.">
+            A Unity game in progress inspired by a Galton board, with progression and a skill tree. An opportunity to
+            experiment with game systems and balance.</p>
+          <div class="tags"><span>Unity</span><span data-en="Game development" data-es="Desarrollo de juegos">Game
+              development</span></div>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-number">04 /</div>
+        <div>
+          <div class="project-type" data-en="Messaging · Early experiment" data-es="Mensajería · Experimento inicial">
+            Messaging · Early experiment</div>
+          <h3>ChatWei</h3>
+        </div>
+        <div class="project-copy">
+          <p data-en="A very early messaging experiment with an API, database and custom encryption. Built for learning; its security has not been verified and it is not intended for sensitive communication."
+            data-es="Un experimento muy inicial de mensajería con API, base de datos y cifrado propio. Creado para aprender; su seguridad no está verificada y no está pensado para comunicaciones sensibles.">
+            A very early messaging experiment with an API, database and custom encryption. Built for learning; its
+            security has not been verified and it is not intended for sensitive communication.</p>
+          <div class="tags"><span>API</span><span data-en="Database" data-es="Base de datos">Database</span><span
+              data-en="Learning project" data-es="Proyecto de aprendizaje">Learning project</span></div><a
+            class="project-link" href="https://github.com/Hoshikuu/DEPRECATED-Chatwei"
+            data-en="View the old repository ↗" data-es="Ver el repositorio anterior ↗">View the old repository ↗</a>
+        </div>
+      </article>
     </section>
-
-    <section id="current" class="section current">
-        <div class="container">
-            <h2 class="section-title">Current Work</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Local Inference Optimization for HadaAI</h3>
-                        <span class="timeline-date">2026</span>
-                        <p>Optimizing llama.cpp with Qwen3.5-35B-A3B in Q2_K_XL quantization for local inference, using a large context window and tuning performance for limited hardware.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>RVC Streaming Integration</h3>
-                        <span class="timeline-date">2026</span>
-                        <p>Transforming the RVC WebUI workflow into a FastAPI WebSocket endpoint for real-time audio streaming and voice conversion.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Daily Memory System for HadaAI</h3>
-                        <span class="timeline-date">2026</span>
-                        <p>Designing a simple memory system based on daily context to make interactions feel more persistent, structured, and personal over time.</p>
-                    </div>
-                </div>
-            </div>
+    <section class="wrap" id="lab">
+      <div class="lab">
+        <div>
+          <div class="eyebrow" data-en="Beyond the code" data-es="Más allá del código">Beyond the code</div>
+          <h2 data-en="The home lab." data-es="Mi laboratorio en casa.">The home lab.</h2>
+          <p data-en="I run a home lab for storage and experimenting with infrastructure. It stays on my home network and is not exposed to the internet."
+            data-es="Mantengo un laboratorio doméstico para almacenamiento y pruebas de infraestructura. Funciona solo en la red de casa y no está expuesto a internet.">
+            I run a home lab for storage and experimenting with infrastructure. It stays on my home network and is not
+            exposed to the internet.</p>
         </div>
+        <div class="lab-list">
+          <div class="lab-row"><span data-en="Virtualization"
+              data-es="Virtualización">Virtualization</span><span>Proxmox</span></div>
+          <div class="lab-row"><span data-en="Home server" data-es="Servidor doméstico">Home
+              server</span><span>Raspberry Pi 5</span></div>
+          <div class="lab-row"><span data-en="Storage" data-es="Almacenamiento">Storage</span><span>OpenMediaVault ·
+              HDD</span></div>
+          <div class="lab-row"><span data-en="Data protection" data-es="Protección de datos">Data
+              protection</span><span>SnapRAID</span></div>
+        </div>
+      </div>
     </section>
-
-    <section id="certs" class="section certs">
-        <div class="container">
-            <h2 class="section-title">Education & Certifications</h2>
-            <div class="certs-grid">
-                <div class="cert-card">
-                    <div class="cert-icon">🎓</div>
-                    <h3>DAM</h3>
-                    <p class="cert-entity">Institut Vidal i Barraquer</p>
-                    <p class="cert-year">2025 - Ongoing</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">📘</div>
-                    <h3>Honours Degree of SMR</h3>
-                    <p class="cert-entity">Institut Vidal i Barraquer</p>
-                    <p class="cert-year">2025</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">🏫</div>
-                    <h3>SMR</h3>
-                    <p class="cert-entity">Institut Vidal i Barraquer</p>
-                    <p class="cert-year">2023 - 2025</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">💻</div>
-                    <h3>Python Course</h3>
-                    <p class="cert-entity">Tokio School</p>
-                    <p class="cert-year">2023</p>
-                </div>
-            </div>
+    <section class="section wrap beyond" id="about">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow" data-en="Beyond the code" data-es="Más allá del código">Beyond the code</div>
+          <h2 data-en="More about me." data-es="Un poco más sobre mí.">More about me.</h2>
         </div>
+        <p data-en="The systems I work with, what I have studied and where I want to go next."
+          data-es="Los sistemas con los que trabajo, lo que he estudiado y hacia dónde quiero seguir.">The systems I
+          work with, what I have studied and where I want to go next.</p>
+      </div>
+      <div class="beyond-grid">
+        <article class="story">
+          <div class="story-index">01 / <span data-en="MY PATH" data-es="MI RECORRIDO">MY PATH</span></div>
+          <h3 data-en="Learning the whole stack." data-es="Aprender cómo encaja todo.">Learning the whole stack.</h3>
+          <p data-en="My path started with vocational studies in microcomputer systems and networks, followed by advanced vocational studies in multiplatform application development. I want to continue with a computer engineering degree."
+            data-es="Mi recorrido empezó con el ciclo medio de Sistemas Microinformáticos y Redes, seguido del ciclo superior de Desarrollo de Aplicaciones Multiplataforma. Más adelante quiero estudiar Ingeniería Informática.">
+            My path started with vocational studies in microcomputer systems and networks, followed by advanced
+            vocational studies in multiplatform application development. I want to continue with a computer engineering
+            degree.</p>
+          <div class="path-list"><span>SMR</span><span>DAM</span><span data-en="Computer engineering / next"
+              data-es="Ingeniería informática / próximo paso">Computer engineering / next</span></div>
+        </article>
+        <article class="story">
+          <div class="story-index">02 / <span data-en="ON THE WEB" data-es="EN LA WEB">ON THE WEB</span></div>
+          <h3 data-en="A space of my own." data-es="Un espacio propio en la web.">A space of my own.</h3>
+          <p data-en="I manage hoshiku.net with Cloudflare and have an Oracle Cloud virtual machine. I plan to use them to host my applications and set up a mail server for my domain. These are separate from my private home lab."
+            data-es="Gestiono hoshiku.net con Cloudflare y tengo una máquina virtual en Oracle Cloud. Planeo utilizarlas para alojar mis aplicaciones y montar un servidor de correo para mi dominio. Todo esto es independiente de mi laboratorio privado en casa.">
+            I manage hoshiku.net with Cloudflare and have an Oracle Cloud virtual machine. I plan to use them to host my
+            applications and set up a mail server for my domain. These are separate from my private home lab.</p>
+          <div class="path-list"><span>hoshiku.net</span><span>Cloudflare</span><span>Oracle Cloud</span></div>
+        </article>
+      </div>
+      <div class="about-note">
+        <div>
+          <div class="eyebrow" data-en="A little about me" data-es="Un poco sobre mí">A little about me</div>
+          <h3 data-en="Hi, I'm Hoshiku." data-es="Hola, soy Hoshiku.">Hi, I'm Hoshiku.</h3>
+        </div>
+        <div>
+          <p data-en="I enjoy working across software and infrastructure, from building applications to setting up the systems they run on. I use personal projects to try things out, solve problems and keep improving."
+            data-es="Me gusta trabajar tanto con software como con infraestructura: desde crear aplicaciones hasta preparar los sistemas donde funcionan. Mis proyectos personales me sirven para probar ideas, resolver problemas y seguir mejorando.">
+            I enjoy working across software and infrastructure, from building applications to setting up the systems
+            they run on. I use personal projects to try things out, solve problems and keep improving.</p><a
+            class="project-link" href="https://github.com/Hoshikuu" data-en="Find me on GitHub ↗"
+            data-es="Encuéntrame en GitHub ↗">Find me on GitHub ↗</a>
+        </div>
+      </div>
     </section>
-
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <p class="contact-intro">You can find me on the platforms below.</p>
-            <div class="social-grid">
-                <a href="https://github.com/Hoshikuu" target="_blank" rel="noopener" class="social-card github">
-                    <div class="social-icon">💻</div>
-                    <h4>GitHub</h4>
-                    <p>Hoshikuu</p>
-                </a>
-
-                <a href="https://www.linkedin.com/in/weibo-qiu" target="_blank" rel="noopener" class="social-card linkedin">
-                    <div class="social-icon">💼</div>
-                    <h4>LinkedIn</h4>
-                    <p>weibo-qiu</p>
-                </a>
-
-                <a href="https://discord.com/users/853193606529024041" target="_blank" rel="noopener" class="social-card discord">
-                    <div class="social-icon">💬</div>
-                    <h4>Discord</h4>
-                    <p>hoshiku_</p>
-                </a>
-
-                <a href="https://www.instagram.com/hoshiku__/" target="_blank" rel="noopener" class="social-card instagram">
-                    <div class="social-icon">📷</div>
-                    <h4>Instagram</h4>
-                    <p>hoshiku__</p>
-                </a>
-
-                <a href="https://x.com/Hoshiku__" target="_blank" rel="noopener" class="social-card twitter">
-                    <div class="social-icon">🐦</div>
-                    <h4>X / Twitter</h4>
-                    <p>Hoshiku__</p>
-                </a>
-
-                <a href="mailto:weiboq22@gmail.com" class="social-card email">
-                    <div class="social-icon">✉️</div>
-                    <h4>Email</h4>
-                    <p>weiboq22@gmail.com</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>Built with 💜 by Hoshiku · <a href="https://www.hoshiku.net" target="_blank" rel="noopener">www.hoshiku.net</a></p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  </main>
+  <footer class="closing wrap"><span>hoshiku ✦</span><span data-en="Built by Hoshiku."
+      data-es="Creado por Hoshiku.">Built by Hoshiku.</span></footer>
+  <script src="script.js" defer></script>
 </body>
+
 </html>
